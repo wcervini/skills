@@ -1,0 +1,23 @@
+{
+  "name": "better-auth-best-practices",
+  "version": "1.0.0",
+  "description": "Configure Better Auth server and client, database adapters, sessions, plugins, and environment variables.",
+  "keywords": ["better auth", "betterauth", "auth.ts", "email/password", "oauth", "session", "database adapter", "drizzle adapter", "prisma adapter", "two-factor", "plugins", "sign-in", "sign-up"],
+  "sections": [
+    { "name": "Setup Workflow" },
+    { "name": "Quick Reference" },
+    { "name": "Core Config Options" },
+    { "name": "Database" },
+    { "name": "Session Management" },
+    { "name": "User & Account Config" },
+    { "name": "Email Flows" },
+    { "name": "Security" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "sources": [
+    "https://better-auth.com/docs",
+    "https://better-auth.com/docs/reference/options",
+    "https://better-auth.com/llms.txt",
+    "https://github.com/better-auth/better-auth"
+  ]
+}

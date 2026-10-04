@@ -1,0 +1,48 @@
+{
+  "name": "drizzle",
+  "version": "1.0.0",
+  "description": "Drizzle ORM schema style guide: tables, indexes, relations, joins and inferred types.",
+  "keywords": [
+    "drizzle",
+    "drizzle-orm",
+    "drizzle-kit",
+    "drizzle.config.ts",
+    "pgTable",
+    "sqliteTable",
+    "relations",
+    "schema",
+    "query",
+    "inferred types",
+    "migrations folder"
+  ],
+  "author": "Walter Cervini",
+  "sections": [
+    {
+      "name": "Configuration"
+    },
+    {
+      "name": "Helper Functions"
+    },
+    {
+      "name": "Naming Conventions"
+    },
+    {
+      "name": "Column Definitions"
+    },
+    {
+      "name": "Type Inference"
+    },
+    {
+      "name": "Common Patterns"
+    },
+    {
+      "name": "Query Style"
+    },
+    {
+      "name": "Database Migrations"
+    }
+  ],
+  "entryPoints": [
+    "SKILL.md"
+  ]
+}

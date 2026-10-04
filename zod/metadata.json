@@ -1,0 +1,30 @@
+{
+  "name": "zod",
+  "version": "1.0.0",
+  "description": "Zod schema validation best practices for type safety, parsing, and error handling.",
+  "keywords": ["zod", "schema validation", "z.object", "z.string", "safeParse", "z.infer", "type safety", "parsing", "error handling", "refine", "discriminated unions"],
+  "ruleCount": 43,
+  "categories": [
+    { "name": "Schema Definition", "priority": 1, "impact": "CRITICAL", "prefix": "schema-", "rules": 6 },
+    { "name": "Parsing & Validation", "priority": 2, "impact": "CRITICAL", "prefix": "parse-", "rules": 6 },
+    { "name": "Type Inference", "priority": 3, "impact": "HIGH", "prefix": "type-", "rules": 5 },
+    { "name": "Error Handling", "priority": 4, "impact": "HIGH", "prefix": "error-", "rules": 5 },
+    { "name": "Object Schemas", "priority": 5, "impact": "MEDIUM-HIGH", "prefix": "object-", "rules": 6 },
+    { "name": "Schema Composition", "priority": 6, "impact": "MEDIUM", "prefix": "compose-", "rules": 5 },
+    { "name": "Refinements & Transforms", "priority": 7, "impact": "MEDIUM", "prefix": "refine-", "rules": 5 },
+    { "name": "Performance & Bundle", "priority": 8, "impact": "LOW-MEDIUM", "prefix": "perf-", "rules": 5 }
+  ],
+  "entryPoints": ["SKILL.md", "AGENTS.md"],
+  "referencesDir": "references",
+  "sectionsFile": "references/_sections.md",
+  "ruleTemplate": "assets/templates/_template.md",
+  "sources": [
+    "https://zod.dev/",
+    "https://zod.dev/v4",
+    "https://github.com/colinhacks/zod",
+    "https://zod.dev/packages/mini",
+    "https://www.totaltypescript.com/tutorials/zod",
+    "https://zod.dev/error-handling",
+    "https://zod.dev/api"
+  ]
+}

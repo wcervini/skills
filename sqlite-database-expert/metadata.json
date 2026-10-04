@@ -1,0 +1,19 @@
+{
+  "name": "sqlite-database-expert",
+  "version": "1.0.0",
+  "description": "SQLite embedded development for Tauri/desktop: injection prevention, migrations, FTS, secure handling.",
+  "keywords": ["sqlite", "SQL injection", "parameterized queries", "migrations", "FTS5", "WAL mode", "foreign keys", "transactions", "tauri", "embedded database", "secure"],
+  "routes_to": {
+    "orm_layer": "drizzle"
+  },
+  "sections": [
+    { "name": "Core Responsibilities" },
+    { "name": "Technical Foundation" },
+    { "name": "Implementation Patterns" },
+    { "name": "Security Standards" },
+    { "name": "Testing Standards" },
+    { "name": "Implementation Workflow (TDD)" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

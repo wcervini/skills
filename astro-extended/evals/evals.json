@@ -1,0 +1,77 @@
+{
+  "skill_name": "astro-extended",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "i'm adding google sign-in to my astro app with arctic. set up the middleware so the /dashboard and /settings routes are protected and redirect unauthenticated users to /login.",
+      "expected_output": "Creates src/middleware.ts with defineMiddleware, session cookie validation, PROTECTED matcher for /dashboard and /settings, redirects via context.redirect('/login')",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Creates src/middleware.ts that exports onRequest via defineMiddleware",
+        "Validates the session cookie (validateSessionToken)",
+        "Matches /dashboard and /settings routes as protected",
+        "Redirects to /login when route is protected and no valid session",
+        "Calls next() for unprotected routes"
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "i have an astro SSR page at /dashboard. i need to get the current user and redirect to /login if they're not authenticated.",
+      "expected_output": "Uses Astro.locals.user in frontmatter, calls Astro.redirect('/login') when falsy, page has export const prerender = false",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Reads Astro.locals.user in the frontmatter",
+        "Calls return Astro.redirect('/login') when user is falsy",
+        "Page has export const prerender = false",
+        "Does NOT use Astro.locals.auth() (clerk API)"
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "i need to protect an Astro API route at /api/data.ts so only authenticated users can call it. return 401 if not authenticated.",
+      "expected_output": "API route reads context.locals.user, returns 401 JSON Response when not authenticated",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Reads context.locals.user in the GET or POST handler",
+        "Returns 401 JSON Response when user is falsy",
+        "Does NOT require auth in the static prerender path (API routes are always SSR)"
+      ]
+    },
+    {
+      "id": 4,
+      "prompt": "i need the google login route: generate state and PKCE verifier with arctic, store as cookies, redirect to google.",
+      "expected_output": "Creates src/pages/login/google/index.ts with generateState/generateCodeVerifier, httpOnly lax cookies (10min), context.redirect to authorization URL",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Uses generateState and generateCodeVerifier from arctic",
+        "Stores google_oauth_state and google_code_verifier as httpOnly cookies",
+        "Requests openid/profile/email scopes",
+        "Redirects to the Google authorization URL"
+      ]
+    },
+    {
+      "id": 5,
+      "prompt": "handle the google oauth callback: verify state, exchange code, find-or-create user by google sub, create session.",
+      "expected_output": "Callback compares state, calls validateAuthorizationCode, decodeIdToken, keys user by claims.sub, creates session + cookie",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Returns 400 when state is missing or mismatched",
+        "Calls google.validateAuthorizationCode(code, codeVerifier)",
+        "Decodes ID token and keys the user by sub (not email)",
+        "Creates session and sets session cookie, then redirects"
+      ]
+    },
+    {
+      "id": 6,
+      "prompt": "i have a mix of static and dynamic pages in my astro app. how do i handle google auth on pages that are statically prerendered?",
+      "expected_output": "Explains that prerendered pages skip middleware/sessions, suggests prerender=false per page or hybrid output, or fetching session state client-side",
+      "scaffold": "astro-basic-auth",
+      "expectations": [
+        "Notes that middleware/session is skipped for prerendered pages",
+        "Suggests export const prerender = false for pages that need auth",
+        "Explains the hybrid rendering approach",
+        "Does NOT suggest server session reads work on prerendered pages"
+      ]
+    }
+  ]
+}

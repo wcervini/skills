@@ -1,0 +1,31 @@
+{
+  "name": "caveman-commit",
+  "version": "0.2.0",
+  "description": "Genera mensajes de commit en Conventional Commits comprimidos al máximo y agrupados por scope, listos para copiar y pegar. Usar con 'mensaje de commit' o 'caveman-commit'. Nunca ejecuta git commit.",
+  "keywords": [
+    "mensaje de commit",
+    "caveman-commit",
+    "commit message",
+    "conventional commits",
+    "gitmoji",
+    "fisher",
+    "emoji commit",
+    "breaking change",
+    "por scope"
+  ],
+  "routes_to": {},
+  "permissions": ["read", "shell:git-read-only", "execute:scripts/verify.fish"],
+  "scope": "project",
+  "dependencies": [],
+  "scripts": {
+    "verify": "scripts/verify.fish"
+  },
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references",
+  "references": [
+    "references/fisher.md",
+    "references/conventional-commits.md",
+    "references/ejemplos.md",
+    "references/convenciones-proyecto.md"
+  ]
+}

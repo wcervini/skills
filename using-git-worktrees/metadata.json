@@ -1,0 +1,15 @@
+{
+  "name": "using-git-worktrees",
+  "version": "1.0.0",
+  "description": "Isolate feature work via native tools or git worktree fallback with baseline tests.",
+  "keywords": ["worktree", "git worktree", "isolation", "isolated workspace", "baseline tests", "feature work", "submodule", "harness"],
+  "routes_to": {
+    "execute_plan": "executing-plans"
+  },
+  "sections": [
+    { "name": "Detect Existing Isolation" },
+    { "name": "Create Isolated Workspace" },
+    { "name": "Project Setup" }
+  ],
+  "entryPoints": ["SKILL.md"]
+}

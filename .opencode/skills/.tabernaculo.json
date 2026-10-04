@@ -1,0 +1,15 @@
+{
+  "version": 1,
+  "cli": "",
+  "project": "",
+  "skills": {
+    "astro-base": {
+      "target": "/home/underghround/.skills/astro-base",
+      "linked_at": "2026-10-04T11:35:50+01:00"
+    },
+    "caveman-commit": {
+      "target": "/home/underghround/.skills/caveman-commit",
+      "linked_at": "2026-10-04T11:35:50+01:00"
+    }
+  }
+}

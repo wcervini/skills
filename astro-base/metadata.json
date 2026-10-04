@@ -1,0 +1,26 @@
+{
+  "name": "astro-base",
+  "version": "0.0.1",
+  "description": "Skill for building with the Astro web framework: components, pages, SSR adapters, content collections, static deploys, project structure and CLI.",
+  "keywords": ["astro", ".astro", "astro.config", "SSG", "static site", "content collections", "islands", "SSR adapters", "astro dev", "astro build", "astro check", "astro add", "astro sync", "src/pages", "web components", "custom elements"],
+  "routes_to": {
+    "google_oauth": "astro-extended",
+    "local_auth_db": "better-auth-best-practices"
+  },
+  "sections": [
+    { "name": "Quick Reference", "rules": 3 },
+    { "name": "Core Config Options", "rules": 1 },
+    { "name": "Common Workflows", "rules": 3 },
+    { "name": "Adapters", "rules": 4 },
+    { "name": "Web Components", "rules": 6 }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references",
+  "ruleTemplate": "assets/templates/page-template.astro",
+  "sources": [
+    "https://docs.astro.build",
+    "https://docs.astro.build/en/reference/configuration-reference/",
+    "https://docs.astro.build/llms.txt",
+    "https://github.com/withastro/astro"
+  ]
+}

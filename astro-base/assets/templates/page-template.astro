@@ -1,0 +1,25 @@
+---
+// src/pages/hello.astro — filename becomes the route (/hello)
+const title = 'Hello, Astro!';
+---
+<html>
+  <head><title>{title}</title></head>
+  <body>
+    <h1>{title}</h1>
+  </body>
+</html>
+
+---
+// src/components/Card.astro — reusable component with props
+const { title, body } = Astro.props;
+---
+<div class="card">
+  <h2>{title}</h2>
+  <p>{body}</p>
+</div>
+
+---
+// usage inside a page
+import Card from '../components/Card.astro';
+---
+<Card title="Hi" body="Reusable card" />

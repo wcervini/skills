@@ -1,0 +1,12 @@
+---
+import Layout from "../layouts/Layout.astro"
+const user = Astro.locals.user;
+---
+
+<Layout>
+  {user ? (
+    <p>Welcome, {user.name}! <a href="/dashboard">Dashboard</a></p>
+  ) : (
+    <p><a href="/login/google">Sign in with Google</a></p>
+  )}
+</Layout>

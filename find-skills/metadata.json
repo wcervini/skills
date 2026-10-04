@@ -1,0 +1,16 @@
+{
+  "name": "find-skills",
+  "version": "1.0.0",
+  "description": "Discover and install agent skills from the open ecosystem (skills.sh) or curate them manually.",
+  "keywords": ["find skill", "how do I do X", "is there a skill", "extend capabilities", "skills.sh", "npx skills", "manual curation", "install skill"],
+  "sections": [
+    { "name": "Skills CLI" },
+    { "name": "Leaderboard First" },
+    { "name": "Search" },
+    { "name": "Verify Quality" },
+    { "name": "Present Options" },
+    { "name": "Offer to Install" },
+    { "name": "Manual Curation (Without Installer)" }
+  ],
+  "entryPoints": ["SKILL.md"]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "create-github-action-workflow-specification",
+  "version": "1.0.0",
+  "description": "Create a formal AI-consumable specification for an existing GitHub Actions CI/CD workflow.",
+  "keywords": ["github actions", "workflow", "CI/CD", "specification", "jobs", "requirements matrix", "input/output contracts", "yaml workflow"],
+  "sections": [
+    { "name": "Workflow Overview" },
+    { "name": "Execution Flow" },
+    { "name": "Jobs & Dependencies" },
+    { "name": "Requirements Matrix" },
+    { "name": "Input/Output Contracts" },
+    { "name": "Environment Variables" },
+    { "name": "Repository Triggers" }
+  ],
+  "entryPoints": ["SKILL.md"]
+}

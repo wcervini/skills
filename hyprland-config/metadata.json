@@ -1,0 +1,15 @@
+{
+  "name": "hyprland-config",
+  "version": "1.0.0",
+  "description": "Configurar Hyprland: atajos, monitores, autostart, windowrules, decoración y diagnóstico con hyprctl.",
+  "keywords": ["hyprland", "configurar hyprland", "atajos", "bindings", "monitores", "autostart", "windowrules", "decoración", "hyprctl", "hyprpaper", "hypridle", "diagnosticar", "Lua"],
+  "sections": [
+    { "name": "Cuándo usar" },
+    { "name": "Flujo fijo" },
+    { "name": "Estructura de respuesta" },
+    { "name": "Límites estrictos" },
+    { "name": "Reglas" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "explain-code",
+  "version": "1.0.0",
+  "description": "Explica código fuente paso a paso en español simple, con ejemplos ejecutables.",
+  "keywords": ["explicar código", "qué hace", "explain code", "función", "archivo", "snippet", "JS", "TS", "ejemplos ejecutables", "niveles", "principiante", "senior"],
+  "sections": [
+    { "name": "Cuándo usar" },
+    { "name": "Cómo explicar" },
+    { "name": "Límites estrictos" },
+    { "name": "Reglas" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "modern-javascript-patterns",
+  "version": "1.0.0",
+  "description": "Master ES6+ features: async/await, destructuring, modules, promises, iterators, Lit and web components.",
+  "keywords": ["ES6", "javascript", "async/await", "destructuring", "spread", "promises", "modules", "generators", "refactor", "lit", "web components", "strict mode"],
+  "sections": [
+    { "name": "When to Use" },
+    { "name": "Patterns & Examples" },
+    { "name": "Best Practices" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

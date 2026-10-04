@@ -1,0 +1,17 @@
+{
+  "name": "nodejs-backend-patterns",
+  "version": "1.0.0",
+  "description": "Production Node.js backends with Express/Fastify: middleware, errors, auth, data, API design.",
+  "keywords": ["nodejs", "express", "fastify", "REST API", "graphql", "microservices", "middleware", "error handling", "authentication", "backend", "server"],
+  "routes_to": {
+    "testing": "javascript-testing-patterns"
+  },
+  "sections": [
+    { "name": "When to Use" },
+    { "name": "Patterns & Examples" },
+    { "name": "Best Practices" },
+    { "name": "Testing Patterns" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

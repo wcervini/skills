@@ -1,0 +1,37 @@
+{
+  "name": "tabernaculo",
+  "version": "0.1.0",
+  "description": "Skill manager (Agent Skills) for agent CLIs — import skills from GitHub/local and link them into projects.",
+  "type": "module",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wcervini/tabernaculo.git"
+  },
+  "keywords": [
+    "skills",
+    "agent-skills",
+    "agents",
+    "cli",
+    "opencode",
+    "claude",
+    "codex",
+    "gemini",
+    "bun"
+  ],
+  "files": [
+    "src"
+  ],
+  "bin": {
+    "tabernaculo": "./src/main.ts"
+  },
+  "scripts": {
+    "start": "bun run src/main.ts",
+    "typecheck": "tsc --noEmit",
+    "build": "bun build --compile --outfile tabernaculo src/main.ts"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.9.0"
+  }
+}

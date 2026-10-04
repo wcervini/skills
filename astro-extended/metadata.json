@@ -1,0 +1,31 @@
+{
+  "name": "astro-extended",
+  "version": "1.0.0",
+  "description": "Google sign-in / OAuth for Astro with arctic: login route, OAuth callback, sessions, middleware, protected SSR pages, API route auth.",
+  "keywords": ["google", "oauth", "arctic", "openid", "sign in with google", "google login", "oauth callback", "protected page", "session cookie", "PKCE", "middleware"],
+  "routes_to": {
+    "local_auth_db": "better-auth-best-practices",
+    "framework_only": "astro-base"
+  },
+  "positioning": "arctic direct (full control, manual PKCE/state/cookies, own session scheme) over better-auth (integrated DB adapters, plugins) when you want zero magic.",
+  "sections": [
+    { "name": "OAuth Setup", "file": "oauth-setup.md" },
+    { "name": "Login Route", "file": "login-route.md" },
+    { "name": "Callback Route", "file": "callback-route.md" },
+    { "name": "Sessions", "file": "session.md" },
+    { "name": "Middleware", "file": "middleware.md" },
+    { "name": "SSR Pages", "file": "ssr-pages.md" },
+    { "name": "API Routes", "file": "api-routes.md" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references",
+  "templatesDir": "templates/astro-basic-auth",
+  "evals": "evals/evals.json",
+  "ruleTemplate": "assets/templates/login-route.ts",
+  "sources": [
+    "https://lucia-auth.com/tutorials/google-oauth/astro",
+    "https://v1.arcticjs.dev/providers/google",
+    "https://v1.arcticjs.dev/guides/oauth2-pkce",
+    "https://developers.google.com/identity/gsi/web/guides/verify-google-id-token"
+  ]
+}

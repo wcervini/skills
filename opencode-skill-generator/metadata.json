@@ -1,0 +1,18 @@
+{
+  "name": "opencode-skill-generator",
+  "version": "0.0.1",
+  "description": "Generador interactivo de habilidades multi-archivo para OpenCode CLI. Realiza entrevista de 6 pasos.",
+  "keywords": [
+    "crear skill",
+    "nueva skill",
+    "generador",
+    "arquitectura multi-archivo",
+    "entrevista"
+  ],
+  "permissions": ["read", "write"],
+  "scope": "global",
+  "dependencies": [],
+  "scripts": {},
+  "routes_to": {},
+  "entryPoints": ["SKILL.md"]
+}

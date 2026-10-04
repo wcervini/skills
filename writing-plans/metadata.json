@@ -1,0 +1,19 @@
+{
+  "name": "writing-plans",
+  "version": "1.0.0",
+  "description": "Write bite-sized implementation plans from specs before touching code.",
+  "keywords": ["writing plans", "implementation plan", "spec", "requirements", "multi-step task", "task sizing", "plan header", "subagent-driven", "inline execution"],
+  "routes_to": {
+    "execute_inline": "executing-plans",
+    "execute_subagents": "subagent-driven-development",
+    "isolate_first": "using-git-worktrees"
+  },
+  "sections": [
+    { "name": "Scope Check" },
+    { "name": "File Structure" },
+    { "name": "Task Right-Sizing" },
+    { "name": "Plan Document Header" },
+    { "name": "Task Structure" }
+  ],
+  "entryPoints": ["SKILL.md"]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "google-astro",
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build"
+  },
+  "dependencies": {
+    "astro": "^5.0.0",
+    "arctic": "^3.0.0",
+    "@astrojs/node": "^9.0.0",
+    "@oslojs/crypto": "^1.0.0",
+    "@oslojs/encoding": "^1.0.0"
+  }
+}

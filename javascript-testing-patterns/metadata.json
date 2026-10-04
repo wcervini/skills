@@ -1,0 +1,20 @@
+{
+  "name": "javascript-testing-patterns",
+  "version": "1.0.0",
+  "description": "Testing strategies with Jest, Vitest, and Testing Library: unit, integration, E2E, mocking, fixtures, TDD/BDD.",
+  "keywords": ["testing", "jest", "vitest", "testing library", "unit test", "integration test", "e2e", "mock", "fixture", "coverage", "TDD", "BDD", "test infrastructure"],
+  "routes_to": {
+    "tdd_workflow": "test-driven-development"
+  },
+  "sections": [
+    { "name": "Testing Frameworks" },
+    { "name": "Unit Testing Patterns" },
+    { "name": "Mocking Patterns" },
+    { "name": "Integration Testing" },
+    { "name": "Frontend Testing" },
+    { "name": "Fixtures and Factories" },
+    { "name": "Best Practices" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}

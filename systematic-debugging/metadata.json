@@ -1,0 +1,17 @@
+{
+  "name": "systematic-debugging",
+  "version": "1.0.0",
+  "description": "Debug via reproduce-first discipline: four phases from reproduction to root cause to fix.",
+  "keywords": ["debug", "bug", "test failure", "unexpected behavior", "root cause", "reproduce", "four phases", "red flags", "no root cause"],
+  "routes_to": {
+    "verify_fix": "verification-before-completion"
+  },
+  "sections": [
+    { "name": "The Four Phases" },
+    { "name": "When to Use" },
+    { "name": "Red Flags" },
+    { "name": "Quick Reference" },
+    { "name": "Supporting Techniques" }
+  ],
+  "entryPoints": ["SKILL.md"]
+}

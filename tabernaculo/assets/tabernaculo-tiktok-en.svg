@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2b1055"/>
+      <stop offset="0.55" stop-color="#170a38"/>
+      <stop offset="1" stop-color="#0a0320"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.34" r="0.62">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.35"/>
+      <stop offset="0.55" stop-color="#8b5cf6" stop-opacity="0.12"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="title" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ffd873"/>
+      <stop offset="0.5" stop-color="#ffb347"/>
+      <stop offset="1" stop-color="#ff7a3d"/>
+    </linearGradient>
+    <linearGradient id="iconGrad" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#7c3aed"/>
+      <stop offset="1" stop-color="#4c1d95"/>
+    </linearGradient>
+    <linearGradient id="iconGlow" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffd873" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#ff7a3d" stop-opacity="0.9"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Fondo -->
+  <rect width="1080" height="1920" fill="url(#bg)"/>
+  <rect width="1080" height="1920" fill="url(#glow)"/>
+
+  <!-- Motas decorativas -->
+  <g fill="#a78bfa" opacity="0.14">
+    <circle cx="120" cy="260" r="6"/>
+    <circle cx="960" cy="330" r="9"/>
+    <circle cx="90" cy="900" r="5"/>
+    <circle cx="990" cy="1120" r="7"/>
+    <circle cx="150" cy="1560" r="8"/>
+    <circle cx="930" cy="1750" r="5"/>
+  </g>
+
+  <!-- Kicker -->
+  <text x="540" y="150" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="700" letter-spacing="6" fill="#c9b8f5" opacity="0.9">SKILLS MANAGER FOR AGENT-CLIs</text>
+
+  <!-- Icono: ventana de terminal + enlace -->
+  <g transform="translate(540,290)">
+    <circle r="150" fill="none" stroke="#8b5cf6" stroke-opacity="0.35" stroke-width="2"/>
+    <rect x="-92" y="-92" width="184" height="184" rx="46" fill="url(#iconGrad)" stroke="#ffd873" stroke-opacity="0.35" stroke-width="3"/>
+    <circle cx="-52" cy="-54" r="8" fill="#ff6b6b"/>
+    <circle cx="-24" cy="-54" r="8" fill="#ffd166"/>
+    <circle cx="4" cy="-54" r="8" fill="#4ade80"/>
+    <text x="-46" y="10" font-family="DejaVu Sans Mono, monospace" font-size="58" font-weight="700" fill="#ffd873">&gt;_</text>
+    <!-- insignia de enlace (dos eslabones) en la esquina -->
+    <g transform="translate(56,56)">
+      <rect x="0" y="0" width="74" height="74" rx="24" fill="#12071f" stroke="#ffd873" stroke-width="4"/>
+      <g transform="translate(37,37)" fill="none" stroke="#ffd873" stroke-width="7">
+        <ellipse cx="-11" cy="0" rx="12" ry="9"/>
+        <ellipse cx="11" cy="0" rx="12" ry="9"/>
+      </g>
+    </g>
+  </g>
+
+  <!-- Título -->
+  <text x="540" y="620" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="132" font-weight="800" fill="url(#title)">tabernaculo</text>
+
+  <!-- Subtítulo -->
+  <text x="540" y="760" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="48" font-weight="600" fill="#ffffff">
+    <tspan x="540">Import skills from GitHub or local</tspan>
+    <tspan x="540" dy="60">link them to your project in 1 click</tspan>
+  </text>
+
+  <!-- Tarjeta terminal -->
+  <g>
+    <rect x="90" y="900" width="900" height="452" rx="30" fill="#130826" stroke="#3b2a66" stroke-width="3"/>
+    <circle cx="138" cy="942" r="11" fill="#ff6b6b"/>
+    <circle cx="170" cy="942" r="11" fill="#ffd166"/>
+    <circle cx="202" cy="942" r="11" fill="#4ade80"/>
+    <line x1="108" y1="976" x2="972" y2="976" stroke="#2c1f52" stroke-width="3"/>
+    <g font-family="DejaVu Sans Mono, monospace" font-size="31" font-weight="500">
+      <text x="128" y="1026" fill="#ffd873">$</text>
+      <text x="158" y="1026" fill="#e9e4ff">tabernaculo import --from wcervini/skills-repo</text>
+      <text x="158" y="1074" fill="#b9a8e8">Skills found in source:</text>
+      <text x="190" y="1122" fill="#e9e4ff">1) alpha</text>
+      <text x="190" y="1170" fill="#e9e4ff">2) beta</text>
+      <text x="158" y="1218" fill="#b9a8e8">Choose number or name: </text>
+      <text x="600" y="1218" fill="#ffd873">2</text>
+      <text x="158" y="1266" fill="#4ade80">ok: beta -&gt; ~/.skills/beta</text>
+    </g>
+  </g>
+
+  <!-- Pills de comandos fila 1 -->
+  <g font-family="DejaVu Sans, sans-serif" font-size="33" font-weight="600" fill="#ffffff">
+    <rect x="210" y="1430" width="150" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="285" y="1471" text-anchor="middle">import</text>
+    <rect x="390" y="1430" width="128" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="454" y="1471" text-anchor="middle">scan</text>
+    <rect x="548" y="1430" width="126" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="611" y="1471" text-anchor="middle">list</text>
+    <rect x="704" y="1430" width="138" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="773" y="1471" text-anchor="middle">link</text>
+  </g>
+
+  <!-- Pills fila 2 -->
+  <g font-family="DejaVu Sans, sans-serif" font-size="33" font-weight="600" fill="#ffffff">
+    <rect x="248" y="1524" width="162" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="329" y="1565" text-anchor="middle">unlink</text>
+    <rect x="440" y="1524" width="152" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="516" y="1565" text-anchor="middle">config</text>
+    <rect x="622" y="1524" width="212" height="66" rx="33" fill="#8b5cf6" fill-opacity="0.16" stroke="#7c5cff" stroke-width="2.5"/>
+    <text x="728" y="1565" text-anchor="middle">completion</text>
+  </g>
+
+  <!-- Agent-CLIs -->
+  <text x="540" y="1672" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="600" fill="#c9b8f5">opencode · claude · codex · gemini · cursor · agents · phi</text>
+
+  <!-- Divisor -->
+  <line x1="300" y1="1732" x2="780" y2="1732" stroke="#5b3f9e" stroke-width="3" stroke-linecap="round"/>
+
+  <!-- Footer -->
+  <text x="540" y="1802" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="40" font-weight="700" fill="#ffd873">github.com/wcervini/tabernaculo</text>
+  <text x="540" y="1862" text-anchor="middle" font-family="DejaVu Sans, sans-serif" font-size="30" font-weight="500" fill="#a78bfa">@wcervini  ·  v0.1.0</text>
+</svg>

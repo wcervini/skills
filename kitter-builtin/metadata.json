@@ -1,0 +1,16 @@
+{
+  "name": "kitter-builtin",
+  "version": "1.0.0",
+  "description": "Manage a reusable skill library with Kitter CLI: sources, installs, effective skills, updates.",
+  "keywords": ["kitter", "kitter install", "kitter adopt", "skill library", "skill sources", "global install", "project install", "effective skills"],
+  "sections": [
+    { "name": "Run the CLI" },
+    { "name": "Library-First Practice" },
+    { "name": "Add Skills" },
+    { "name": "Install Skills" },
+    { "name": "Inspect Effective Skills" },
+    { "name": "Organize & Update" }
+  ],
+  "entryPoints": ["SKILL.md"],
+  "referencesDir": "references"
+}
