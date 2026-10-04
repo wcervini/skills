@@ -137,3 +137,24 @@ tabernaculo link --cli opencode --project /ruta/al/proyecto --skill <nombre>
 - Tabernáculo: <https://github.com/wcervini/tabernaculo>
 - Agent Skills: <https://agentskills.io>
 - Este repositorio está pensado para usarse desde cualquier proyecto.
+
+## Licencia
+
+[MIT](LICENSE) © 2026 Walter Cervini — **solo para el contenido de autoría propia**
+(estructura del repositorio, `AGENTS.md`, `README.md`, `skills-lock.json` y las
+skills creadas por el autor).
+
+Las skills importadas de terceros **no** están cubiertas por esta licencia: cada
+una conserva la de su autor original. Su origen se catalogará progresivamente vía
+[skills.sh](https://skills.sh) (con la skill `find-skills`).
+
+### Procedencia
+
+| Estado | Skills |
+|---|---|
+| Autoría propia (MIT) | `caveman-commit`, `tabernaculo` |
+| Terceros — por confirmar origen en skills.sh | `accessibility`, `astro-base`, `cloudflare`, `cloudflare-deploy`, `create-github-action-workflow-specification`, `drizzle`, `find-skills`, `frontend-design`, `impeccable`, `impeccable--183cc09b`, `javascript-testing-patterns`, `kitter`, `kitter-builtin`, `_kitter-builtin`, `modern-javascript-patterns`, `nodejs-backend-patterns`, `nodejs-best-practices`, `opencode-skill-generator`, `oxlint`, `seo`, `sqlite-database-expert`, `systematic-debugging`, `tailwind-css-patterns`, `typescript-advanced-types`, `using-git-worktrees`, `vivaldi-bookmarks`, `web-perf`, `workers-best-practices`, `wrangler`, `writing-plans`, `zod` |
+
+> Nota: las skills "por confirmar" pueden contener creaciones propias; la tabla se
+> irá actualizando a medida que se verifique el origen en skills.sh.
+> Ejemplo conocido: [`frontend-design/LICENSE.txt`](frontend-design/LICENSE.txt).
